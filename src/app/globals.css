@@ -1,8 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
+@layer components {
+  /* GENERAL PADDING FOR X and Y */
+  .PaddingX {
+    @apply px-6 sm:px-10 md:px-16 lg:px-20 xl:px-24;
+  }
+
+  .PaddingY {
+    @apply py-6 sm:py-10 md:py-16 lg:py-20 xl:py-24;
+  }
+
+  /* HOME STYLING */
+  .Home {
+    @apply PaddingX;
+    @apply py-6 md:py-8 lg:py-9 xl:py-10;
+    @apply relative md:static;
+    /* @apply min-h-[55rem]; */
+    /* @apply bg-[url("../public/publicAssets/BackgroundImage.png")]; */
+  }
+  .Header {
+    @apply flex justify-between;
+    /* @apply bg-slate-400; */
+  }
+  .Navbar {
+    @apply hidden md:flex flex-col md:flex-row font-semibold text-xl;
+    @apply absolute top-20 md:static;
+    @apply right-6 left-6 sm:right-10 sm:left-10;
+    /* @apply bg-slate-700; */
+  }
+  .Navbar a {
+    @apply mx-0 md:mx-2 lg:mx-3 xl:mx-4;
+  }
+  .Home-Body {
+    @apply w-full md:w-[70%] lg:w-[50%];
+    @apply text-black md:text-white;
+    @apply my-16 sm:my-24 md:my-32 lg:my-32  xl:my-40;
+    @apply text-center md:text-left;
+  }
+  .Home-Content {
+    @apply mb-16;
+    /* @apply flex flex-col justify-center; */
+  }
+  .Home-Content h1 {
+    @apply text-[47px] sm:text-[60px] lg:text-[65px] leading-[1.2] font-bold;
+    @apply pb-5 mx-auto md:mx-0;
+    /* @apply self-center; */
+  }
+  .Home-Content p {
+    @apply text-base font-semibold md:text-xl w-[85%] mx-auto md:mx-0;
+  }
+
+  /* Services */
+  .Services {
+    @apply bg-[rgba(93,_98,_239,_1)];
+    @apply PaddingX;
+    @apply py-0 sm:py-2 md:py-20 lg:py-24 xl:py-28;
+    @apply text-center;
+  }
+  .Services h1 {
+    @apply text-2xl sm:text-3xl md:text-[40px] md:leading-[40px];
+    @apply text-[rgba(37,37,37,1)] md:text-white;
+    @apply text-center;
+    @apply font-bold;
+  }
+  .Services-content-container {
+    @apply flex md:justify-center flex-col md:flex-row;
+  }
+  .Services-content {
+    @apply py-10 px-6 bg-[rgba(248,_249,_251,_1)];
+    @apply rounded-3xl;
+    @apply mb-6 md:mr-8;
+  }
+  .Services-content:last-child {
+    @apply mr-0;
+  }
+}
+
+@layer utilities {
+  .Home {
+    /* background-image: ; */
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+  }
+}
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -30,4 +115,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
