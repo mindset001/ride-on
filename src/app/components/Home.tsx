@@ -15,7 +15,7 @@ const Home: NextPage<Props> = ({}) => {
         alt="Hero"
         fill
         priority
-        className="size-full object-cover object-center absolute -z-10"
+        className="hidden md:block size-full object-cover object-center absolute -z-10"
       />
       <div className="Header">
         <div className="size-auto">

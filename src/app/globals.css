@@ -4,6 +4,9 @@
 @tailwind utilities;
 
 @layer components {
+  * {
+    box-sizing: border-box;
+  }
   /* GENERAL PADDING FOR X and Y */
   .PaddingX {
     @apply px-6 sm:px-10 md:px-16 lg:px-20 xl:px-24;
@@ -57,17 +60,19 @@
   .Services {
     @apply bg-[rgba(93,_98,_239,_1)];
     @apply PaddingX;
-    @apply py-0 sm:py-2 md:py-20 lg:py-24 xl:py-28;
+    @apply py-7 sm:py-7 md:py-20 lg:py-24 xl:py-28;
     @apply text-center;
   }
   .Services h1 {
     @apply text-2xl sm:text-3xl md:text-[40px] md:leading-[40px];
-    @apply text-[rgba(37,37,37,1)] md:text-white;
+    @apply text-white;
     @apply text-center;
     @apply font-bold;
+    @apply mb-8 sm:mb-10 md:mb-14;
   }
   .Services-content-container {
     @apply flex md:justify-center flex-col md:flex-row;
+    /* @apply md:w-[calc(50%-32px)] md:flex-wrap flex-nowrap; */
   }
   .Services-content {
     @apply py-10 px-6 bg-[rgba(248,_249,_251,_1)];
@@ -75,7 +80,7 @@
     @apply mb-6 md:mr-8;
   }
   .Services-content:last-child {
-    @apply mr-0;
+    /* @apply mr-0; */
   }
 }
 
