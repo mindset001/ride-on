@@ -80,7 +80,7 @@
     @apply mb-6 md:mr-8;
   }
   .Services-content:last-child {
-    /* @apply mr-0; */
+    @apply mr-0;
   }
 }
 
