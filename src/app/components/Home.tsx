@@ -13,9 +13,12 @@ const Home: NextPage<Props> = ({}) => {
       <Image
         src={BG}
         alt="Hero"
+        rel="preload"
         fill
-        priority
+        priority={true}
         className="hidden md:block size-full object-cover object-center absolute -z-10"
+
+        // style={{ width: "auto", height: "auto" }}
       />
       <div className="Header">
         <div className="size-auto">

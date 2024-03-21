@@ -28,7 +28,8 @@ const Services: NextPage<Props> = ({}) => {
                 <Image
                   src={service.image}
                   alt={service.image}
-                  className="size-[224px] "
+                  className="size-[224px]"
+                  style={{width: "auto", height: "auto"}}
                 />
               </div>
 

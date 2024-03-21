@@ -19,12 +19,14 @@ const About: NextPage<Props> = ({}) => {
           <Image
             src={AboutDesktop1}
             alt="About1"
-            className="w-[592px] h-[600px] hidden md:block object-cover object-center"
+            className="size-full hidden md:block object-cover object-center"
+            style={{ width: "auto", height: "auto" }}
           />
           <Image
             src={AboutMobile1}
             alt="About1"
-            className="w-[360px] h-[364.86px] block md:hidden object-cover object-center"
+            className="size-full block md:hidden object-cover object-center"
+            style={{ width: "auto", height: "auto" }}
           />
         </div>
         <div className="About-Contents ml-0 md:ml-14">
@@ -49,12 +51,14 @@ const About: NextPage<Props> = ({}) => {
           <Image
             src={AboutDesktop2}
             alt="About2"
-            className="w-[592px] h-[600px] hidden md:block object-cover object-center"
+            className="size-full hidden md:block object-cover object-center"
+            style={{ width: "auto", height: "auto" }}
           />
           <Image
             src={AboutMobile2}
             alt="About2"
-            className="w-[360px] h-[364.86px] block md:hidden object-cover object-center"
+            className="size-full block md:hidden object-cover object-center"
+            style={{ width: "auto", height: "auto" }}
           />
         </div>
       </div>
@@ -63,12 +67,14 @@ const About: NextPage<Props> = ({}) => {
           <Image
             src={AboutDesktop3}
             alt="About3"
-            className="w-[592px] h-[600px] hidden md:block object-cover object-center"
+            className="size-full hidden md:block object-cover object-center"
+            style={{ width: "auto", height: "auto" }}
           />
           <Image
             src={AboutMobile3}
             alt="About3"
-            className="w-[360px] h-[364.86px] block md:hidden object-cover object-center"
+            className="size-full block md:hidden object-cover object-center"
+            style={{ width: "auto", height: "auto" }}
           />
         </div>
         <div className="About-Contents ml-0 md:ml-14">

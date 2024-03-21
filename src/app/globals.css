@@ -32,6 +32,8 @@
     @apply hidden md:flex flex-col md:flex-row font-semibold text-xl;
     @apply absolute top-20 md:static;
     @apply right-6 left-6 sm:right-10 sm:left-10;
+    @apply text-[rgba(37,37,37,1)];
+
     /* @apply bg-slate-700; */
   }
   .Navbar a {
@@ -39,7 +41,7 @@
   }
   .Home-Body {
     @apply w-full md:w-[70%] lg:w-[50%];
-    @apply text-black md:text-white;
+    @apply text-[rgba(37,37,37,1)] md:text-[rgba(252,_252,_253,_1)];
     @apply my-16 sm:my-24 md:my-32 lg:my-32  xl:my-40;
     @apply text-center md:text-left;
   }
@@ -65,24 +67,25 @@
   }
   .Services h1 {
     @apply text-2xl sm:text-3xl md:text-[40px] md:leading-[40px];
-    @apply text-white;
+    @apply text-[rgba(252,_252,_253,_1)];
     @apply text-center;
     @apply font-bold;
     @apply mb-8 sm:mb-10 md:mb-14;
   }
   .Services-content-container {
-    @apply flex justify-center flex-wrap lg:flex-nowrap w-full;
+    @apply flex justify-center flex-col md:flex-row w-full;
     /* @apply md:w-[calc(50%-32px)] md:flex-wrap flex-nowrap; */
   }
   .Services-content {
-    @apply pt-10 pb-7 hover:duration-500 duration-500 px-6 bg-[rgba(248,_249,_251,_1)];
+    @apply pt-10 pb-7 px-6 bg-[rgba(248,_249,_251,_1)];
     @apply rounded-3xl;
     @apply mb-6 md:mr-8;
     /* @apply self-baseline; */
-    /* @apply w-full md:  */
+    @apply w-full md:w-[calc(50%-32px)]; 
+    @apply text-[rgba(95,_106,_120,_1)];
   }
   .Services-content:last-child {
-    @apply lg:mr-0;
+    @apply md:mr-0 md:w-[50%];;
   }
 
   /* About */
