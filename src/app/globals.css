@@ -130,7 +130,7 @@
   }
   .GetApp-Body {
     @apply flex flex-col-reverse md:flex-row;
-    @apply bg-[rgba(248,_249,_251,_1)] rounded-[56px];
+    @apply bg-[rgba(248,_249,_251,_1)] rounded-2xl md:rounded-3xl lg:rounded-[56px];
   }
   .GetAppImage,
   .GetAppContent {
@@ -154,7 +154,7 @@
     @apply text-[rgba(95,106,120,1)];
     @apply text-center md:text-left text-sm sm:text-base md:text-lg lg:text-xl text-wrap;
   }
-  .GetContentImage {
+  .GetAppContentImage {
     @apply flex flex-row justify-center;
   }
 }

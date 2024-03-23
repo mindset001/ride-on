@@ -39,7 +39,7 @@ const GetApp: NextPage<Props> = ({}) => {
               turpis.
             </p>
           </div>
-          <div className="GetContentImage">
+          <div className="GetAppContentImage">
             <Link href={""}>
               <Image
                 src={GAGooglePlayD}
