@@ -40,18 +40,18 @@ const GetApp: NextPage<Props> = ({}) => {
             </p>
           </div>
           <div className="GetAppContentImage">
-            <Link href={""}>
+            <Link href={""} className="mr-[6.97px] md:mr-4 lg:mr-6">
               <Image
                 src={GAGooglePlayD}
                 alt="GAGooglePlayD"
-                className="w-[189px] mr-6 h-[56px] hidden md:block object-cover object-center"
+                className=" h-[45px] w-[189px] xl:h-[56px] hidden md:block object-fill object-center"
                 // style={{ width: "auto", height: "auto" }}
               />
 
               <Image
                 src={GAGooglePlayM}
                 alt="GAGooglePlayM"
-                className="w-[135px] mr-[6.97px] h-[40px] block md:hidden object-cover object-center"
+                className="w-[135px] h-[40px] block md:hidden object-contain object-center"
                 // style={{ width: "auto", height: "auto" }}
               />
             </Link>
@@ -59,14 +59,14 @@ const GetApp: NextPage<Props> = ({}) => {
               <Image
                 src={GAAppleStoreD}
                 alt="GAAppleStoreD"
-                className="w-[168px] h-[56px] hidden md:block object-cover object-center"
+                className="h-[45px] w-[168px] xl:h-[56px] hidden md:block object-fill object-center"
                 // style={{ width: "auto", height: "auto" }}
               />
 
               <Image
                 src={GAAppleStoreM}
                 alt="GAAppleStoreM"
-                className="w-[120px] h-[40px] block md:hidden object-cover object-center"
+                className="w-[120px] h-[40px] block md:hidden object-contain object-center"
                 // style={{ width: "auto", height: "auto" }}
               />
             </Link>

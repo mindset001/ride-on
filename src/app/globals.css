@@ -32,15 +32,23 @@
     /* @apply bg-slate-400; */
   }
   .Navbar {
-    @apply hidden md:flex flex-col md:flex-row font-semibold text-xl;
+    @apply flex-col md:flex-row font-semibold text-xl;
+
+    @apply text-[rgba(37,37,37,1)];
+
+    /* Mobile Nav Setting */
+    @apply bg-white md:bg-transparent;
     @apply absolute top-20 md:static;
     @apply right-6 left-6 sm:right-10 sm:left-10;
-    @apply text-[rgba(37,37,37,1)];
+    @apply py-10 md:py-0 rounded;
+    @apply items-center md:items-start;
+    @apply shadow-lg drop-shadow-2xl shadow-gray-400 md:shadow-none;
 
     /* @apply bg-slate-700; */
   }
   .Navbar a {
     @apply mx-0 md:mx-2 lg:mx-3 xl:mx-4;
+    @apply py-2;
   }
   .Home-Body {
     @apply w-full md:w-[70%] lg:w-[50%];
@@ -140,10 +148,11 @@
     @apply mt-7 pl-[67px] pr-[75px] md:mt-[38px] md:pl-9 md:pr-10;
   }
   .GetAppContent {
-    @apply mt-6 mb-0 px-4 md:my-[60px] md:pr-[80px] md:pl-0;
+    @apply mt-6 mb-0 px-4 md:my-[60px] md:px-10 lg:pr-[80px] lg:pl-[80px];
+    @apply flex flex-col justify-between;
   }
   .GetAppContentOne {
-    @apply mb-6 sm:mb-7 md:mb-20 lg:mb-44;
+    @apply mb-6;
   }
   .GetAppContentOne h2 {
     @apply text-center md:text-left mb-2 md:mb-6;
@@ -155,7 +164,7 @@
     @apply text-center md:text-left text-sm sm:text-base md:text-lg lg:text-xl text-wrap;
   }
   .GetAppContentImage {
-    @apply flex flex-row justify-center;
+    @apply flex flex-row justify-center md:justify-start;
   }
 }
 

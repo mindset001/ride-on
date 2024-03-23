@@ -1,17 +1,28 @@
+"use client";
+
 import { AppleStore, GooglePlay, Logo } from "@/assets";
 import { NextPage } from "next";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
 import Link from "next/link";
-import BG from "@/public/publicAssets/BackgroundImage.png";
-
+import DesktopBG from "@/public/publicAssets/BackgroundImage.png";
+import MobileBG from "@/public/publicAssets/Mobile BG.png";
+import { useState } from "react";
+// import { useClient } from "next-auth/react";
 interface Props {}
 
 const Home: NextPage<Props> = ({}) => {
+  const [toggle, setToggle] = useState<boolean>(false);
+
+  const NavToggle = (): any => {
+    return setToggle(!toggle);
+  };
+
+  // useClient();
   return (
     <div className="Home relative">
       <Image
-        src={BG}
+        src={DesktopBG}
         alt="Hero"
         rel="preload"
         fill
@@ -20,15 +31,36 @@ const Home: NextPage<Props> = ({}) => {
 
         // style={{ width: "auto", height: "auto" }}
       />
+      <Image
+        src={MobileBG}
+        alt="Hero"
+        rel="preload"
+        fill
+        priority={true}
+        className="block md:hidden size-full object-cover object-center absolute -z-10"
+
+        // style={{ width: "auto", height: "auto" }}
+      />
       <div className="Header">
         <div className="size-auto">
           <Image src={Logo} alt="RideON" />
         </div>
-        <div className="text-2xl block md:hidden">Ξ</div>
-        <div className="Navbar">
-          <Link href={""}>Help</Link>
-          <Link href={""}>Contact Us</Link>
-          <Link href={""}>Get App</Link>
+        <div
+          className="text-2xl font-semibold block md:hidden"
+          onClick={NavToggle}
+        >
+          ☰
+        </div>
+        <div className={`Navbar ${toggle ? "flex md:flex" : "hidden md:flex"}`}>
+          <Link href={""} onClick={() => setToggle(false)}>
+            Help
+          </Link>
+          <Link href={""} onClick={() => setToggle(false)}>
+            Contact Us
+          </Link>
+          <Link href={""} onClick={() => setToggle(false)}>
+            Get App
+          </Link>
         </div>
       </div>
       <div className="Home-Body">
