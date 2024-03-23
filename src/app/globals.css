@@ -137,7 +137,7 @@
     @apply w-full md:w-1/2;
   }
   .GetAppImage {
-    @apply mt-0 pl-[67px] pr-[75px] md:mt-[38px] md:pl-9 md:pr-10;
+    @apply mt-7 pl-[67px] pr-[75px] md:mt-[38px] md:pl-9 md:pr-10;
   }
   .GetAppContent {
     @apply mt-6 mb-0 px-4 md:my-[60px] md:pr-[80px] md:pl-0;
@@ -154,8 +154,8 @@
     @apply text-[rgba(95,106,120,1)];
     @apply text-center md:text-left text-sm sm:text-base md:text-lg lg:text-xl text-wrap;
   }
-  .GetContentImage{
-    @apply flex flex-row;
+  .GetContentImage {
+    @apply flex flex-row justify-center;
   }
 }
 

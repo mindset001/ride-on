@@ -20,13 +20,13 @@ const About: NextPage<Props> = ({}) => {
             src={AboutDesktop1}
             alt="About1"
             className="size-full hidden md:block object-cover object-center"
-            style={{ width: "auto", height: "auto" }}
+            // style={{ width: "auto", height: "auto" }}
           />
           <Image
             src={AboutMobile1}
             alt="About1"
             className="size-full block md:hidden object-cover object-center"
-            style={{ width: "auto", height: "auto" }}
+            // style={{ width: "auto", height: "auto" }}
           />
         </div>
         <div className="About-Contents ml-0 md:ml-14">
@@ -52,13 +52,13 @@ const About: NextPage<Props> = ({}) => {
             src={AboutDesktop2}
             alt="About2"
             className="size-full hidden md:block object-cover object-center"
-            style={{ width: "auto", height: "auto" }}
+            // style={{ width: "auto", height: "auto" }}
           />
           <Image
             src={AboutMobile2}
             alt="About2"
             className="size-full block md:hidden object-cover object-center"
-            style={{ width: "auto", height: "auto" }}
+            // style={{ width: "auto", height: "auto" }}
           />
         </div>
       </div>
@@ -68,13 +68,13 @@ const About: NextPage<Props> = ({}) => {
             src={AboutDesktop3}
             alt="About3"
             className="size-full hidden md:block object-cover object-center"
-            style={{ width: "auto", height: "auto" }}
+            // style={{ width: "auto", height: "auto" }}
           />
           <Image
             src={AboutMobile3}
             alt="About3"
             className="size-full block md:hidden object-cover object-center"
-            style={{ width: "auto", height: "auto" }}
+            // style={{ width: "auto", height: "auto" }}
           />
         </div>
         <div className="About-Contents ml-0 md:ml-14">

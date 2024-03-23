@@ -20,13 +20,13 @@ const GetApp: NextPage<Props> = ({}) => {
           <Image
             src={GetAppImageD}
             className="size-full hidden md:block object-contain object-center"
-            style={{ width: "auto", height: "auto" }}
+            // style={{ width: "auto", height: "auto" }}
             alt="GetAppImageDesktop"
           />
           <Image
             src={GetAppImageM}
             className="size-full block md:hidden object-cover object-center"
-            style={{ width: "auto", height: "auto" }}
+            // style={{ width: "auto", height: "auto" }}
             alt="GetAppImageMobile"
           />
         </div>
