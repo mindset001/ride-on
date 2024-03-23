@@ -7,11 +7,14 @@
   * {
     box-sizing: border-box;
   }
-  /* GENERAL PADDING FOR X and Y */
+  /* GENERAL PADDING AND MARGIN FOR X and Y */
   .PaddingX {
     @apply px-6 sm:px-10 md:px-16 lg:px-20 xl:px-24;
   }
 
+  .MarginX {
+    @apply mx-6 sm:mx-10 md:mx-16 lg:mx-20 xl:mx-24;
+  }
   .PaddingY {
     @apply py-6 sm:py-10 md:py-16 lg:py-20 xl:py-24;
   }
@@ -81,11 +84,11 @@
     @apply rounded-3xl;
     @apply mb-6 md:mr-8;
     /* @apply self-baseline; */
-    @apply w-full md:w-[calc(50%-32px)]; 
+    @apply w-full md:w-[calc(50%-32px)];
     @apply text-[rgba(95,_106,_120,_1)];
   }
   .Services-content:last-child {
-    @apply md:mr-0 md:w-[50%];;
+    @apply md:mr-0 md:w-[50%];
   }
 
   /* About */
@@ -104,6 +107,9 @@
   .About-Contents {
     @apply w-full md:w-1/2;
   }
+  .About-Images {
+    @apply flex justify-center;
+  }
   .About-Contents {
     @apply self-start md:self-center;
   }
@@ -114,6 +120,42 @@
   }
   .About-Contents p {
     @apply text-base sm:text-lg md:text-xl text-[rgba(95,_106,_120,_1)];
+  }
+
+  /* Get App */
+
+  .GetApp {
+    @apply PaddingX;
+    @apply py-10 sm:py-14 md:py-24 lg:py-28 xl:py-32;
+  }
+  .GetApp-Body {
+    @apply flex flex-col-reverse md:flex-row;
+    @apply bg-[rgba(248,_249,_251,_1)] rounded-[56px];
+  }
+  .GetAppImage,
+  .GetAppContent {
+    @apply w-full md:w-1/2;
+  }
+  .GetAppImage {
+    @apply mt-0 pl-[67px] pr-[75px] md:mt-[38px] md:pl-9 md:pr-10;
+  }
+  .GetAppContent {
+    @apply mt-6 mb-0 px-4 md:my-[60px] md:pr-[80px] md:pl-0;
+  }
+  .GetAppContentOne {
+    @apply mb-6 sm:mb-7 md:mb-20 lg:mb-44;
+  }
+  .GetAppContentOne h2 {
+    @apply text-center md:text-left mb-2 md:mb-6;
+    @apply font-semibold text-xl sm:text-3xl md:text-[36px] lg:text-[40px] md:leading-[40px];
+    @apply text-[rgba(37,_37,_37,_1)];
+  }
+  .GetAppContentOne p {
+    @apply text-[rgba(95,106,120,1)];
+    @apply text-center md:text-left text-sm sm:text-base md:text-lg lg:text-xl text-wrap;
+  }
+  .GetContentImage{
+    @apply flex flex-row;
   }
 }
 
