@@ -1,10 +1,12 @@
 import {
+  AppleStore,
   GAAppleStoreD,
   GAAppleStoreM,
   GAGooglePlayD,
   GAGooglePlayM,
-  GetAppImageD,
-  GetAppImageM,
+  GetAppImage,
+  // GetAppImageM,
+  GooglePlay,
 } from "@/assets";
 import { NextPage } from "next";
 import Image from "next/image";
@@ -18,17 +20,17 @@ const GetApp: NextPage<Props> = ({}) => {
       <div className="GetApp-Body">
         <div className="GetAppImage flex justify-center">
           <Image
-            src={GetAppImageD}
-            className="size-full hidden md:block object-contain object-center"
+            src={GetAppImage}
+            className="size-full block object-contain object-center"
             // style={{ width: "auto", height: "auto" }}
-            alt="GetAppImageDesktop"
+            alt="GetAppImage"
           />
-          <Image
+          {/* <Image
             src={GetAppImageM}
             className="size-full block md:hidden object-cover object-center"
             // style={{ width: "auto", height: "auto" }}
             alt="GetAppImageMobile"
-          />
+          /> */}
         </div>
         <div className="GetAppContent">
           <div className="GetAppContentOne">
@@ -40,33 +42,64 @@ const GetApp: NextPage<Props> = ({}) => {
             </p>
           </div>
           <div className="GetAppContentImage">
-            <Link href={""} className="mr-[6.97px] md:mr-4 lg:mr-6">
+            <Link href={""} className="group mr-[6.97px] md:mr-4 lg:mr-6">
+              {/* Desktop */}
               <Image
                 src={GAGooglePlayD}
                 alt="GAGooglePlayD"
-                className=" h-[45px] w-[189px] xl:h-[56px] hidden md:block object-fill object-center"
+                className=" w-[189px] h-[56px] hidden md:block md:group-hover:hidden object-contain object-center"
                 // style={{ width: "auto", height: "auto" }}
               />
 
+              <Image
+                src={GooglePlay}
+                alt="GAGooglePlayD"
+                className=" w-[189px] h-[56px] hidden group-hover:hidden md:hidden md:group-hover:block object-contain object-center"
+                // style={{ width: "auto", height: "auto" }}
+              />
+
+              {/* Mobile */}
               <Image
                 src={GAGooglePlayM}
                 alt="GAGooglePlayM"
-                className="w-[135px] h-[40px] block md:hidden object-contain object-center"
+                className="w-[135px] h-[40px] block group-hover:hidden md:hidden object-contain object-center"
+                // style={{ width: "auto", height: "auto" }}
+              />
+              <Image
+                src={GooglePlay}
+                alt="GAGooglePlayM"
+                className="w-[135px] h-[40px] hidden group-hover:block md:group-hover:hidden md:hidden object-contain object-center"
                 // style={{ width: "auto", height: "auto" }}
               />
             </Link>
-            <Link href={""}>
+            <Link href={""} className="group">
+              {/* Desktop */}
               <Image
                 src={GAAppleStoreD}
                 alt="GAAppleStoreD"
-                className="h-[45px] w-[168px] xl:h-[56px] hidden md:block object-fill object-center"
+                className=" w-[168px] h-[56px] hidden md:block md:group-hover:hidden object-contain object-center"
                 // style={{ width: "auto", height: "auto" }}
               />
 
               <Image
+                src={AppleStore}
+                alt="GAAppleStoreD"
+                className=" w-[168px] h-[56px] hidden group-hover:hidden md:hidden md:group-hover:block object-contain object-center"
+                // style={{ width: "auto", height: "auto" }}
+              />
+
+              {/* Mobile */}
+              <Image
                 src={GAAppleStoreM}
                 alt="GAAppleStoreM"
-                className="w-[120px] h-[40px] block md:hidden object-contain object-center"
+                className="w-[120px] h-[40px] block group-hover:hidden md:hidden object-contain object-center"
+                // style={{ width: "auto", height: "auto" }}
+              />
+
+              <Image
+                src={AppleStore}
+                alt="GAAppleStoreM"
+                className="w-[120px] h-[40px] hidden group-hover:block md:group-hover:hidden md:hidden object-contain object-center"
                 // style={{ width: "auto", height: "auto" }}
               />
             </Link>

@@ -5,9 +5,11 @@ import { NextPage } from "next";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
 import Link from "next/link";
-import DesktopBG from "@/public/publicAssets/BackgroundImage.png";
-import MobileBG from "@/public/publicAssets/Mobile BG.png";
+// import DesktopBG from "@/";
+// import DesktopBG from "./publicAssets/BackgroundImage.png";
+// import MobileBG from "@/public/publicAssets/Mobile BG.png";
 import { useState } from "react";
+import { DesktopBG, MobileBG } from "../../../public/publicAssets";
 // import { useClient } from "next-auth/react";
 interface Props {}
 
@@ -38,12 +40,12 @@ const Home: NextPage<Props> = ({}) => {
         fill
         priority={true}
         className="block md:hidden size-full object-cover object-center absolute -z-10"
-
         // style={{ width: "auto", height: "auto" }}
+        sizes="auto"
       />
       <div className="Header">
         <div className="size-auto">
-          <Image src={Logo} alt="RideON" />
+          <Image src={Logo} className="w-full h-auto max-w-[116px]" alt="RideON" />
         </div>
         <div
           className="text-2xl font-semibold block md:hidden"

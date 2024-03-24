@@ -1,10 +1,10 @@
 import {
-  AboutDesktop1,
-  AboutDesktop2,
-  AboutDesktop3,
-  AboutMobile1,
-  AboutMobile2,
-  AboutMobile3,
+  About1,
+  About2,
+  About3,
+  // AboutMobile1,
+  // AboutMobile2,
+  // AboutMobile3,
 } from "@/assets";
 import { NextPage } from "next";
 import Image from "next/image";
@@ -17,17 +17,17 @@ const About: NextPage<Props> = ({}) => {
       <div className="About-Containers">
         <div className="About-Images">
           <Image
-            src={AboutDesktop1}
+            src={About1}
             alt="About1"
-            className="size-full hidden md:block object-cover object-center"
+            className="size-full block object-cover object-center"
             // style={{ width: "auto", height: "auto" }}
           />
-          <Image
+          {/* <Image
             src={AboutMobile1}
             alt="About1"
             className="size-full block md:hidden object-cover object-center"
             // style={{ width: "auto", height: "auto" }}
-          />
+          /> */}
         </div>
         <div className="About-Contents ml-0 md:ml-14">
           <h2>Faster Travel Times</h2>
@@ -49,33 +49,33 @@ const About: NextPage<Props> = ({}) => {
         </div>
         <div className="About-Images">
           <Image
-            src={AboutDesktop2}
+            src={About2}
             alt="About2"
-            className="size-full hidden md:block object-cover object-center"
+            className="size-full block object-cover object-center"
             // style={{ width: "auto", height: "auto" }}
           />
-          <Image
+          {/* <Image
             src={AboutMobile2}
             alt="About2"
             className="size-full block md:hidden object-cover object-center"
             // style={{ width: "auto", height: "auto" }}
-          />
+          /> */}
         </div>
       </div>
       <div className="About-Containers">
         <div className="About-Images">
           <Image
-            src={AboutDesktop3}
+            src={About3}
             alt="About3"
-            className="size-full hidden md:block object-cover object-center"
+            className="size-full block object-cover object-center"
             // style={{ width: "auto", height: "auto" }}
           />
-          <Image
+          {/* <Image
             src={AboutMobile3}
             alt="About3"
             className="size-full block md:hidden object-cover object-center"
             // style={{ width: "auto", height: "auto" }}
-          />
+          /> */}
         </div>
         <div className="About-Contents ml-0 md:ml-14">
           <h2>Convenient Pickup and Drop-off</h2>

@@ -32,7 +32,7 @@
     /* @apply bg-slate-400; */
   }
   .Navbar {
-    @apply flex-col md:flex-row font-semibold text-xl;
+    @apply flex-col md:flex-row font-medium text-lg leading-6;
 
     @apply text-[rgba(37,37,37,1)];
 
@@ -66,7 +66,7 @@
     /* @apply self-center; */
   }
   .Home-Content p {
-    @apply text-base font-semibold md:text-xl w-[85%] mx-auto md:mx-0;
+    @apply text-base font-medium md:text-xl w-[85%] mx-auto md:mx-0;
   }
 
   /* Services */
@@ -107,6 +107,7 @@
   }
   .About-Containers {
     @apply flex flex-col md:flex-row w-full;
+    @apply my-12 md:my-0;
   }
   .About-Containers:nth-child(2) {
     @apply flex-col-reverse md:flex-row w-full;
@@ -140,16 +141,18 @@
     @apply flex flex-col-reverse md:flex-row;
     @apply bg-[rgba(248,_249,_251,_1)] rounded-2xl md:rounded-3xl lg:rounded-[56px];
   }
-  .GetAppImage,
+  /* .GetAppImage,
   .GetAppContent {
     @apply w-full md:w-1/2;
-  }
+  } */
   .GetAppImage {
     @apply mt-7 pl-[67px] pr-[75px] md:mt-[38px] md:pl-9 md:pr-10;
+    @apply w-full md:w-[40%];
   }
   .GetAppContent {
     @apply mt-6 mb-0 px-4 md:my-[60px] md:px-10 lg:pr-[80px] lg:pl-[80px];
     @apply flex flex-col justify-between;
+    @apply w-full md:w-[60%];
   }
   .GetAppContentOne {
     @apply mb-6;
@@ -165,6 +168,61 @@
   }
   .GetAppContentImage {
     @apply flex flex-row justify-center md:justify-start;
+  }
+
+  /* Footer */
+  .Footer {
+    @apply PaddingX bg-[rgba(248,_249,_251,_1)];
+
+    @apply text-[rgba(95,106,120,1)];
+    /* Terms & Conditions */
+  }
+  .FooterOne {
+    /* @apply flex flex-col md:flex-row; */
+    @apply pt-6 sm:pt-10 md:pt-14 lg:pt-16;
+    @apply pb-8 md:pb-12 lg:pb-16 xl:pb-20;
+  }
+
+  .FooterOneContent {
+    @apply flex flex-col md:flex-row justify-start md:justify-between;
+    @apply text-sm md:text-base;
+    @apply md:mt-8 mt-4;
+  }
+  .FooterOneLeft {
+    @apply w-full md:w-1/4 mb-8 md:mb-0;
+  }
+  .FooterOneRight {
+    @apply flex flex-col md:flex-row;
+    @apply justify-start md:justify-between;
+    @apply mr-0 md:mr-[64px] lg:mr-24 xl:mr-28 ml-0 md:ml-9 lg:ml-28 xl:ml-40;
+    @apply w-full md:w-[60%];
+    @apply self-start;
+  }
+
+  .FooterOneRight div {
+    @apply flex flex-col;
+    @apply mb-10 md:mb-0;
+  }
+  .FooterOneRight div:last-child {
+    @apply mb-0;
+  }
+
+  .FooterOneRight div a {
+    @apply mb-4;
+  }
+  .FooterOneRight div a:last-child {
+    @apply mb-0;
+  }
+
+  .FooterSocial {
+    @apply flex flex-row;
+  }
+  .FooterSocial a {
+    @apply border border-solid rounded-full border-[rgba(234,_236,_240,_1)];
+    @apply p-3 md:p-2 mr-4 md:mr-3;
+  }
+  .FooterSocial a:last-child {
+    @apply mr-0;
   }
 }
 

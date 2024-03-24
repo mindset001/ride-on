@@ -18,7 +18,7 @@ const Services: NextPage<Props> = ({}) => {
         {Service.map((service: serviceInterface, index: number) => {
           return (
             <div key={index} className="Services-content group">
-              <div className="font-semibold text-xl sm:text-2xl leading-[24px] md:text-[28px] md:leading-[28px]">
+              <div className="font-semibold text-xl sm:text-2xl leading-[24px] md:text-[28px] md:leading-[28px] text-[#252525]">
                 {service.title}
               </div>
               <div className="text-sm md:text-lg pt-9 group-hover:translate-y-[-16px] hover:duration-500 duration-500">
