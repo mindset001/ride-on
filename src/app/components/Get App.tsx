@@ -21,7 +21,7 @@ const GetApp: NextPage<Props> = ({}) => {
         <div className="GetAppImage flex justify-center">
           <Image
             src={GetAppImage}
-            className="size-full block object-contain object-center"
+            className="w-full h-auto max-w-[223px] md:max-w-[467px] block object-cover object-center"
             // style={{ width: "auto", height: "auto" }}
             alt="GetAppImage"
           />
