@@ -25,9 +25,9 @@ const Footer: NextPage<Props> = ({}) => {
         <div className="FooterOneContent">
           <div className="FooterOneLeft">
             <div className="FooterOneLeftContent mb-4 md:mb-6 lg:mb-8 xl:mb-10 ">
-              Lorem ipsum dolor sit amet consectetur. Turpis facilisi ultricies
-              sed felis mauris ornare et sit arcu. Odio nullam scelerisque dolor
-              turpis.
+              RideOn is your go-to for effortless city journeys. Book rides
+              easily, enjoy reliable service and reach your destination
+              hassle-free. Discover convenience today!
             </div>
             <div className="FooterSocial">
               <Link href={""}>
@@ -46,20 +46,20 @@ const Footer: NextPage<Props> = ({}) => {
           </div>
           <div className="FooterOneRight">
             <div>
-              <Link href={""}>Terms & Conditions</Link>
-              <Link href={""}>Cookies</Link>
-              <Link href={""}>Privacy Policy</Link>
-            </div>
-            <div>
               <Link href={""}>About Us</Link>
               <Link href={""}>Contact Us</Link>
               <Link href={""}>Be a Rider</Link>
             </div>
             <div>
+              <Link href={""}>Safety Features</Link>
+              <Link href={""}>Accessibility</Link>
+              <Link href={""}>Reward Programs</Link>
+              <Link href={""}>Travel Tips</Link>
+            </div>
+            <div>
               <Link href={""}>Terms & Conditions</Link>
               <Link href={""}>Privacy Policy</Link>
-              <Link href={""}>Cookies</Link>
-              <Link href={""}>Accessibility</Link>
+              <Link href={""}>Help and Support</Link>
             </div>
           </div>
         </div>
