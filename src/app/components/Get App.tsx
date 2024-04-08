@@ -36,9 +36,8 @@ const GetApp: NextPage<Props> = ({}) => {
           <div className="GetAppContentOne">
             <h2>Download RideON</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Turpis facilisi ultricies
-              sed felis mauris ornare et sit arcu. Odio nullam scelerisque dolor
-              turpis.
+              Get RideOn now for seamless urban travel. Enjoy easy bookings,
+              reliable rides, and reach your destination hassle-free.
             </p>
           </div>
           <div className="GetAppContentImage">
