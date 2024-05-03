@@ -22,6 +22,8 @@ import FacebookLogo from "./FacebookLogo.svg";
 import WhatsAppLogo from "./WhatsappLogo.svg";
 import LinkedinLogo from "./LinkedinLogo.svg";
 import InstagramLogo from "./InstagramLogo.svg";
+import Close from "./Close.svg";
+import Menu from "./Menu.svg";
 
 export {
   Logo,
@@ -47,4 +49,6 @@ export {
   WhatsAppLogo,
   LinkedinLogo,
   InstagramLogo,
+  Close,
+  Menu,
 };

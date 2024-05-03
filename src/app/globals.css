@@ -33,27 +33,39 @@
   }
   .Navbar {
     @apply flex-col md:flex-row font-medium text-lg leading-6;
-
     @apply text-[rgba(37,37,37,1)];
 
     /* Mobile Nav Setting */
     @apply bg-white md:bg-transparent;
-    @apply absolute top-20 md:static;
-    @apply right-6 left-6 sm:right-10 sm:left-10;
-    @apply py-10 md:py-0 rounded;
+    @apply absolute top-0 md:static;
+    @apply pt-[88px] pb-[77px] md:py-0 rounded;
     @apply items-center md:items-start;
-    @apply shadow-lg drop-shadow-2xl shadow-gray-400 md:shadow-none;
+    @apply justify-between md:justify-normal;
+    @apply min-h-full md:h-auto;
+    @apply px-6 sm:px-10;
+    /* @apply shadow-lg drop-shadow-2xl shadow-gray-400 md:shadow-none; */
 
     /* @apply bg-slate-700; */
   }
-  .Navbar a {
+  .Navbar-holder {
+    @apply flex flex-col md:flex-row;
+
+    @apply w-full;
+  }
+  .Navbar-holder a {
     @apply mx-0 md:mx-2 lg:mx-3 xl:mx-4;
-    @apply py-2;
+    @apply py-4;
+    @apply border-b md:border-none border-[rgba(234,_236,_240,_1)] border-solid;
+
+    @apply uppercase md:capitalize;
+  }
+  .Navbar-stores-holder {
+    @apply flex flex-col w-full h-full md:hidden items-center;
   }
   .Home-Body {
     @apply w-full md:w-[70%] lg:w-[50%];
     @apply text-[rgba(37,37,37,1)] md:text-[rgba(252,_252,_253,_1)];
-    @apply my-16 sm:my-24 md:my-32 lg:my-32  xl:my-40;
+    @apply mt-16 mb-[53px] sm:mt-24 md:my-32 lg:my-32  xl:my-40;
     @apply text-center md:text-left;
   }
   .Home-Content {
