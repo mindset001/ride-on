@@ -58,7 +58,7 @@ const Footer: NextPage<Props> = ({}) => {
             </div>
             <div>
               <Link href={""}>Terms & Conditions</Link>
-              <Link href={""}>Privacy Policy</Link>
+              <Link href={"/pages/privacy"}>Privacy Policy</Link>
               <Link href={""}>Help and Support</Link>
             </div>
           </div>
